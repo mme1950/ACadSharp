@@ -1038,12 +1038,6 @@ namespace ACadSharp.IO.DWG
 				case "XRECORD":
 					template = this.readXRecord();
 					break;
-				case "ACAD_EVALUATION_GRAPH":
-					template = this.readEvaluationGraph();
-					break;
-				case "BLOCKVISIBILITYPARAMETER":
-					template = this.readBlockVisibilityParameter();
-					break;
 				default:
 					break;
 			}
