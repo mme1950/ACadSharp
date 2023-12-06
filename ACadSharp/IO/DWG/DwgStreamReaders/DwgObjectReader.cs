@@ -3188,16 +3188,6 @@ namespace ACadSharp.IO.DWG
 		}
 
 
-		private void showCurrentPosAndShift() {
-			long positionO = _objectReader.Position;
-			int bitShiftO = _objectReader.BitShift;
-			System.Diagnostics.Debug.WriteLine($"Pos: {positionO}, bShi: {bitShiftO}");
-			long positionH = _handlesReader.Position;
-			int bitShiftH = _handlesReader.BitShift;
-			System.Diagnostics.Debug.WriteLine($"Pos: {positionH}, bShi: {bitShiftH}");
-		}
-		
-		
 		private CadTemplate readMultiLeaderStyle()
 		{
 			if (!R2010Plus)
@@ -5385,7 +5375,7 @@ namespace ACadSharp.IO.DWG
 				this.handleReference();
 		}
 
-		#endregion Evaluation Graph, Enhanced Block etc.
+		#endregion Object readers
 
 		private CadTemplate readDwgColor()
 		{
