@@ -3187,7 +3187,6 @@ namespace ACadSharp.IO.DWG
 			return leaderLine;
 		}
 
-
 		private CadTemplate readMultiLeaderStyle()
 		{
 			if (!R2010Plus)
